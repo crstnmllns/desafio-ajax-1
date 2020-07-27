@@ -1,0 +1,9 @@
+<% if @post.errors.empty? %>
+  $('#my_posts').append('<%= j render(@post) %>');
+  $('#post_name').val('');
+  $('#post_content').val('');
+  alert('Post creado exitosamente con ajax');
+<% else %>
+  // show first error
+  alert('<%= @post.errors.full_messages[0] %>');
+<% end %>

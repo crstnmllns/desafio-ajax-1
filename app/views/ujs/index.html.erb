@@ -1,0 +1,7 @@
+<%= link_to 'root?', root_path, data: { confirm: 'Are you sure?' } %>
+<h1> Crear post con ajax </h1>
+
+<%= render 'posts/form', post: @post %>
+
+<h2> Aqui van los posts creados</h2>
+<div id='my_posts' style="display: flex;"></div>
